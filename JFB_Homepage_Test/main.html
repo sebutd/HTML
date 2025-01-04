@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JFB Landschaftsbau</title>
+    <link rel='stylesheet' href='main.css'>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+            $("#header").load("header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main class="startseite center">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Front</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Back</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>

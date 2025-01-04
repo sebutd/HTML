@@ -1,0 +1,90 @@
+*{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding 0px;
+    box-sizing: border-box;
+}
+
+body {    
+    min-width: 900px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.topNavigation {
+    width: 100%;  /* i'm assuming full width */
+    height: 120px; /* change it to desired width */
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+}
+
+.topNavigation .emptyNavBlockAfterLogo{
+    display: inline-block;
+    width: 30%;
+}
+
+.topNavigation .emptyNavBlockBeforeLogo{
+    display: inline-block;
+    width: 12.5%;
+}
+
+.topNavigation > a {
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 20px;
+    height: 120px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+    font-size: 20px;
+}
+
+.topNavigation > a:hover {
+    color: lightblue;
+}
+
+.center{
+    text-align: center;
+}
+
+main {
+    min-height: 500px;
+}
+
+.contact input[type=text], input[type=email], textarea{
+    width: 50%;
+    margin: 20px;
+    background-color: white;
+    color: black;
+}
+
+.hrFooter {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.FooterDiv1 {
+    display: inline-block;
+    width: 10px;
+}
+
+.brandingFooter {
+    display: inline-block;
+}
+
+footer .rechtliches ul {
+    display: inline-block;
+   }
+
+footer .rechtliches li {
+ display: inline-block;
+ text-align: right;
+}
