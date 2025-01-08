@@ -2,7 +2,6 @@
     background-color: black;
     color: white;
     margin: 0px;
-    padding 0px;
     box-sizing: border-box;
 }
 
@@ -71,20 +70,11 @@ main {
     margin-left: 12.5%;
 }
 
-.FooterDiv1 {
-    display: inline-block;
-    width: 10px;
+.footer-top {
+    margin: 0 auto;
+    background-color: blue;
 }
 
-.brandingFooter {
+.footer-top div {
     display: inline-block;
-}
-
-footer .rechtliches ul {
-    display: inline-block;
-   }
-
-footer .rechtliches li {
- display: inline-block;
- text-align: right;
 }

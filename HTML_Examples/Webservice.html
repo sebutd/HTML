@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wetter-App</title>
+</head>
+<body>
+    <h1>Aktuelles Wetter in deiner Stadt</h1>
+    <div id="weather"></div>
+
+    <script>
+        // Ersetze 'https://deine-wetter-api.de/wetter?stadt=Berlin' mit der tatsächlichen API-URL
+        fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m&forecast_days=1')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('current').textContent = `Die aktuelle Temperatur in Osnabrück beträgt: ${data.current.temperature_2m} C`;
+        });
+    </script>
+</body>
+</html>

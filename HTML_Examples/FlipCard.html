@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Drehbare Kachel mit Text</title>
-  <style>
-    .kachel {
-      width: 200px;
-      height: 200px;
-      perspective: 1000px;
-      transform-style: preserve-3d;
-    }
+    <style>
+        .kachel {
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
 
-    .seite {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      transition: transform 0.5s;
-    }
+        .seite {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transition: transform 0.5s;
+            border-radius: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .vorderseite {
-      transform: rotateY(0deg);
-      background-color: green;
-      color: white;
-    }
+        .vorderseite {
+            transform: rotateY(0deg);
+            background-color: green;
+            color: white;
+            background-image: url("https://abriss-schuhmacher.com/wp-content/uploads/2024/03/abriss-abbruch-ueberblick-1024x585.jpg");
+        }
 
-    .rückseite {
-      transform: rotateY(180deg);
-      background-color: blue;
-      color: white;
-    }
+        .rückseite {
+            transform: rotateY(180deg);
+            background-color: blue;
+            color: white;
+        }
 
-    .kachel:hover .vorderseite {
-      transform: rotateY(-180deg);
-    }
+        .kachel:hover .vorderseite {
+            transform: rotateY(-180deg);
+        }
 
-    .kachel:hover .rückseite {
-      transform: rotateY(0deg);
-    }
-  </style>
+        .kachel:hover .rückseite {
+            transform: rotateY(0deg);
+        }
+    </style>
 </head>
+
 <body>
-  <div class="kachel">
-  <div class="seite vorderseite">Vorderseite</div>
-  <div class="seite rückseite">Rückseite</div>
-</div>
+    <div class="kachel">
+        <div class="seite vorderseite">Vorderseite</div>
+        <div class="seite rückseite">Rückseite</div>
+    </div>
 </body>
+
 </html>
