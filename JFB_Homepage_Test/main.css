@@ -1,5 +1,5 @@
+/* Allgemeine Anpassungen */
 *{
-    background-color: black;
     color: white;
     margin: 0px;
     box-sizing: border-box;
@@ -9,44 +9,7 @@ body {
     min-width: 900px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-.topNavigation {
-    width: 100%;  /* i'm assuming full width */
-    height: 120px; /* change it to desired width */
-}
-.logo {
-    display: inline-block;
-    vertical-align: top;
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
-    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
-}
-
-.topNavigation .emptyNavBlockAfterLogo{
-    display: inline-block;
-    width: 30%;
-}
-
-.topNavigation .emptyNavBlockBeforeLogo{
-    display: inline-block;
-    width: 12.5%;
-}
-
-.topNavigation > a {
-    display: inline-block;
-    vertical-align: center;
-    margin-right: 20px;
-    height: 120px;        /* if you want it to take the full height of the bar */
-    line-height: 80px;    /* if you want it vertically middle of the navbar */
-    font-size: 20px;
-}
-
-.topNavigation > a:hover {
+a:hover {
     color: lightblue;
 }
 
@@ -54,10 +17,45 @@ nav a {
     text-align: center;
 }
 
-main {
-    min-height: 500px;
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
+
+.background_footer {
+    background: black;
+}
+
+.background_main {
+    background: black;
+}
+/* Anpassungen für den Header */
+.passendeWeiteTopNavi {
+    display: flex;
+    justify-content: center;
+}
+.topNavigation {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+.headerLogo img {
+    width: 100px;
+    height: 100px;
+}
+
+.HeaderNav {
+    display: flex;
+    align-items: center;
+}
+.HeaderNav a{
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* CSS-Anpassungen für den Main-Bereich */
 .contact input[type=text], input[type=email], textarea{
     width: 50%;
     margin: 20px;
@@ -65,16 +63,27 @@ main {
     color: black;
 }
 
-.hrFooter {
+/* Anpassungen für den Footer */
+.footer_passende_weite {
+    display: flex;
+    justify-content: center;
+}
+.footer {
     width: 75%;
-    margin-left: 12.5%;
 }
 
 .footer-top {
-    margin: 0 auto;
-    background-color: blue;
+    display: flex;
+    justify-content: space-around;
 }
 
-.footer-top div {
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rechtliches li{
     display: inline-block;
+    list-style: none;
+    margin: 0 10px;
 }
