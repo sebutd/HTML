@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Description" content="Bonbon-Tausch – ein einfaches Match-3-Spiel in HTML5">
+<link rel="stylesheet" href="style.css">
+<title>Bonbon-Tausch</title>
+</head>
+<body>
+  <main class="game">
+    <header class="game__header">
+      <h1>Bonbon-Tausch</h1>
+      <p>Tausche zwei benachbarte Bonbons, um 3 oder mehr gleiche in eine Reihe zu bringen.</p>
+    </header>
+
+    <section class="hud">
+      <div class="hud__item"><span class="hud__label">Level</span><span id="level" class="hud__value">1</span></div>
+      <div class="hud__item"><span class="hud__label">Punkte</span><span id="score" class="hud__value">0</span></div>
+      <div class="hud__item"><span class="hud__label">Ziel</span><span id="target" class="hud__value">0</span></div>
+      <div class="hud__item"><span class="hud__label">Züge</span><span id="moves" class="hud__value">0</span></div>
+    </section>
+
+    <div class="progress"><div id="progress-bar" class="progress__bar"></div></div>
+
+    <div class="board-wrap">
+      <div id="board" class="board" aria-label="Spielfeld"></div>
+      <div id="combo" class="combo"></div>
+
+      <div id="overlay" class="overlay hidden">
+        <div class="overlay__box">
+          <h2 id="overlay-title">Level geschafft!</h2>
+          <p id="overlay-text"></p>
+          <button id="overlay-btn" class="btn">Weiter</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="game__footer">
+      <button id="restart-btn" class="btn btn--ghost">Neu starten</button>
+      <span>Bestwert: <strong id="best">0</strong></span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
